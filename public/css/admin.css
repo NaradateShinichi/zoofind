@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+body {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #FFFAF0;
+  color: #000;
+  padding-top: 85px;
+}
+
+.navbar-laravel {
+  background-color: #F5DEB3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  color: #A0522D;
+}
+
+.navbar-brand {
+  color: #8B4513 !important;
+}
+
+.nav-item {
+  padding: 15px 30px;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #A0522D;
+  position: relative;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: #8B4513;
+}
+
+.navbar-dark .navbar-nav .nav-link.disabled {
+  color: #F4A460;
+}
+
+.navbar-dark .navbar-nav .nav-link::before,
+.navbar-dark .navbar-nav .nav-link::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #8B4513;
+  transition: 0.3s;
+}
+
+.navbar-dark .navbar-nav .nav-link::before {
+  top: 0;
+  left: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link::after {
+  bottom: 0;
+  right: 0;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover::before,
+.navbar-dark .navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  content: "";
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
+}
+
+.table-dark {
+  color: #fff;
+}
+
+.list-group-item {
+  border-color: #fff;
+  background-color: #000;
+}
+
+.login-box {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.login-header {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.login-body {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.no-gutters {
+  margin: 0;
+  padding: 0;
+}
+
+.no-gutters　 > .col,
+.no-gutters　 > [class*=col-] {
+  margin: 0;
+  padding: 0;
+}
+
+.top-image {
+  position: relative;
+}
+
+.top-message-field {
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  background: rgba(244, 164, 96, 0.6);
+  width: 100%;
+  height: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.top-message {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.top-image img {
+  width: 100%;
+}
+
+.btn-outline-primary {
+  color: #8B4513;
+  background-color: #F5DEB3;
+  border-color: #8B4513;
+}
+
+.btn-outline-primary:hover {
+  color: #fff;
+  background-color: #8B4513;
+  border-color: #8B4513;
+}
+
+.btn-outline-primary:focus,
+.btn-outline-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(244, 164, 96, 0.5);
+}
+
+.btn-outline-primary.disabled,
+.btn-outline-primary:disabled {
+  color: #F5DEB3;
+  background-color: transparent;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.show > .btn-outline-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #8B4513;
+  border-color: #8B4513;
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled):active:focus,
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(244, 164, 96, 0.5);
+}
+
+.sub-message h1 {
+  color: #8B4513;
+  border-top: double 2px #CD853F;
+  border-bottom: double 2px #CD853F;
+  text-align: center;
+}
+
+.card-header {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: rgba(222, 184, 135, 0.4);
+  border-bottom: 1px solid rgba(222, 184, 135, 0.5);
+}
+
+.card-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+  background-color: #FFFAFA;
+}
+
+.login-box {
+  background-color: rgba(222, 184, 135, 0.2);
+  margin-top: 20%;
+}
+
+.login-body {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.login-header {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.card-header {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+.Post-Screen {
+  margin-top: 5%;
+  color: #8B4513;
+}
+
+.posts .post .date {
+  font-size: 0.6em;
+  color: #999999;
+}
+
+.posts .post .title {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.posts .post .zoopark_title {
+  font-size: 0.8em;
+}
+
+.posts .post .favorite_animal {
+  font-size: 0.8em;
+}
+
+.posts .post .body {
+  font-size: 0.8em;
+}
+
+.posts .post .image img {
+  width: 250px;
+}
+
