@@ -43,4 +43,9 @@ class LoginController extends Controller
         return redirect('/top');
     }
     
+    public function redirectPath()
+    {
+        return '/top';
+        //例）return 'costs/index';
+    }
 }

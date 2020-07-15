@@ -257,6 +257,40 @@ body {
   color: #8B4513;
 }
 
+.pb-0,
+.py-0 {
+  padding-bottom: 0 !important;
+  margin-top: 20px;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #8B4513;
+  background-color: #FFEBCD;
+}
+
+.table-hover tbody tr:hover {
+  color: #8B4513;
+  background-color: rgba(0, 0, 0, 0.075);
+}
+
+.row h2 {
+  color: #8B4513;
+}
+
+a {
+  color: #8B4513;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.col-md-2 {
+  flex: 0 0 16.6666666667%;
+  max-width: 16.6666666667%;
+  color: #8B4513;
+}
+
 .posts .post .date {
   font-size: 0.6em;
   color: #999999;
