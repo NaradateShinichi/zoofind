@@ -182,11 +182,40 @@ body {
   box-shadow: 0 0 0 0.2rem rgba(244, 164, 96, 0.5);
 }
 
-.sub-message h1 {
+.sub-message p {
+  font-size: 30px;
   color: #8B4513;
-  border-top: double 2px #CD853F;
-  border-bottom: double 2px #CD853F;
+  border-top: double 8px #CD853F;
+  border-bottom: double 8px #CD853F;
   text-align: center;
+  margin: 40px 40px;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+  background-color: #FFFAFA;
+  text-align: center;
+  color: #8B4513;
+}
+
+.card-text:last-child {
+  margin-bottom: 0;
+  padding-top: 10px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  margin-bottom: 40px;
 }
 
 .card-header {

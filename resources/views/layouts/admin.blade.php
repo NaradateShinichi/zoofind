@@ -17,7 +17,7 @@
         <script src="{{ secure_asset('js/app.js') }}" defer></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <!-- google map api -->
-        <script src="{{ asset('js/map.js') }}"></script>
+        <script src="{{ secure_asset('js/map.js') }}"></script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBg7lYPbXgv1HYu4o3JrNGdwHbbs_VPIJI&callback=initMap"></script>
         
         <!-- Fonts -->
