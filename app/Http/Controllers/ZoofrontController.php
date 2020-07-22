@@ -20,11 +20,17 @@ class ZoofrontController extends Controller
 
         // news/index.blade.php ファイルを渡している
         // また View テンプレートに headline、 posts、という変数を渡している
-        return view('zoofind.index', ['posts' => $posts]);
+        return view('zoo.index', ['posts' => $posts]);
     }
     
     public function test()
     {
-        return view('zoofind.test');
+        return view('zoo.test');
+    }
+    
+    public function show(Request $request)
+    {
+        $post = Zoo::find($request->id);
+        return view('zoo.show', ['post' => $post]);
     }
 }

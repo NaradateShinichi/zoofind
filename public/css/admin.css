@@ -285,6 +285,11 @@ a {
   background-color: transparent;
 }
 
+a:hover {
+  color: #CD853F;
+  text-decoration: underline;
+}
+
 .col-md-2 {
   flex: 0 0 16.6666666667%;
   max-width: 16.6666666667%;
@@ -314,6 +319,32 @@ a {
 }
 
 .posts .post .image img {
+  width: 250px;
+}
+
+.posts .showpost .date {
+  font-size: 0.8em;
+  color: #999999;
+}
+
+.posts .showpost .title {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+.posts .showpost .zoopark_title {
+  font-size: 1em;
+}
+
+.posts .showpost .favorite_animal {
+  font-size: 1em;
+}
+
+.posts .showpost .body {
+  font-size: 1em;
+}
+
+.posts .showpost .image img {
   width: 250px;
 }
 

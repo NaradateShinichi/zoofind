@@ -307,6 +307,11 @@ a {
     background-color: transparent;
 }
 
+a:hover {
+  color: #CD853F;
+  text-decoration: underline;
+}
+
 .col-md-2 {
     flex: 0 0 16.6666666667%;
     max-width: 16.6666666667%;
@@ -332,6 +337,35 @@ a {
     }
     .body {
       font-size: 0.8em;
+    }
+    .image {
+      img {
+    width: 250px;
+      }
+    }
+  }
+}
+
+//show.blade.phpのデザイン
+
+.posts{
+  .showpost {
+    .date {
+      font-size: 0.8em;
+      color: #999999;
+    }
+    .title {
+      font-size: 1.4em;
+      font-weight: bold;
+    }
+    .zoopark_title {
+      font-size: 1em;
+    }
+    .favorite_animal {
+      font-size: 1em;
+    }
+    .body {
+      font-size: 1em;
     }
     .image {
       img {

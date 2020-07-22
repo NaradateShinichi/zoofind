@@ -46,7 +46,7 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <!-- Left Side Of Navbar -->
                             <ul class="navbar-nav mr-auto ml-auto">
-                                <li class="nav-item"><a class="nav-link" href="{{ url('/postslist') }}">投稿をみる</a></li>
+                                <li class="nav-item"><a class="nav-link" href="{{ url('/posts') }}">投稿をみる</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#">動物たちの紹介</a></li>
                                 <li class="nav-item"><a class="nav-link" href="#">動物園の紹介</a></li>
                             </ul>
