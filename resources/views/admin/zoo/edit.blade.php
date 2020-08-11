@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
-                <h2>投稿の編集</h2>
+                <h2 class="editpage_top">投稿の編集</h2>
                 <form action="{{ action('Admin\ZooController@update') }}" method="post" enctype="multipart/form-data">
                     @if (count($errors) > 0)
                         <ul>
@@ -56,14 +56,14 @@
                         <div class="col-md-10">
                             <input type="hidden" name="id" value="{{ $zoo_form->id }}">
                             {{ csrf_field() }}
-                            <input type="submit" class="btn btn-primary" value="更新">
+                            <input type="submit" class="btn btn-outline-primary" value="更新">
                         </div>
                     </div>
                 </form>
                 <div class="row mt-5">
                     <div class="col-md-4 mx-auto">
                         @if ($zoo_form->histories != NULL && count($zoo_form->histories) > 0)  
-                            <h2>編集履歴</h2>
+                            <h2 class="edit_history">編集履歴</h2>
                             <ul class="list-group">
                             @foreach ($zoo_form->histories as $history)
                                 <li class="list-group-item">{{ $history->edited_at }}</li>

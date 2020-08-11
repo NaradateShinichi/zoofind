@@ -1,5 +1,20 @@
 @extends('layouts.admin')
+@section('javascript')
 
+<!-- google map api -->
+<script src="{{ secure_asset('js/map.js') }}"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBg7lYPbXgv1HYu4o3JrNGdwHbbs_VPIJI&callback=readMap"></script>
+
+<script>
+    function readMap() {
+    
+        initMap( '{{ $post->zoopark_title }}' );
+    
+    }
+</script>
+
+
+@endsection
 @section('content')
     <div class="container">
         <hr color="#c0c0c0">
@@ -14,7 +29,7 @@
                             <div class="title">
                                 {{ str_limit($post->title, 150) }}
                             </div>
-                            <div class="zoopark_title">
+                            <div class="zoopark_title" id="keyword">
                                 場所：{{ str_limit($post->zoopark_title, 150) }}
                             </div>
                             <div class="favorite_animal">

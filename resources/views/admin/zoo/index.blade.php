@@ -4,7 +4,7 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <h2>マイページ</h2>
+            <h2 class="mypage_top">マイページ</h2>
         </div>
         <div class="row">
             <div class="col-md-4">

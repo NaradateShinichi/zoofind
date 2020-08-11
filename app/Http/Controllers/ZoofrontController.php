@@ -33,4 +33,9 @@ class ZoofrontController extends Controller
         $post = Zoo::find($request->id);
         return view('zoo.show', ['post' => $post]);
     }
+    
+    public function intro()
+    {
+        return view('zoo.introtest2');
+    }
 }

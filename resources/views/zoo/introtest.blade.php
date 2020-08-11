@@ -14,10 +14,11 @@
 
         <!-- Scripts -->
          {{-- Laravel標準で用意されているJavascriptを読み込みます --}}
-        <script src="{{ secure_asset('js/app.js') }}" defer></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         @yield('javascript')
-        
+        <script src="{{ secure_asset('js/jquery.multiscroll.min.js') }}"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <script src="{{ secure_asset('js/multiscroll.js') }}"></script>
 
         <!-- Fonts -->
         <link rel="dns-prefetch" href="https://fonts.gstatic.com">
@@ -90,14 +91,22 @@
             {{-- ここまでナビゲーションバー --}}
 
             <main class="py-0">
-                {{-- コンテンツをここに入れるため、@yieldで空けておきます。 --}}
-                @yield('content')
-            </main>
-            <footer>
-                <div class="footer">
-                    <small>copyrights &copy; 2020 Zoofind All rights Reserved.</small>
+                <div id="multiscroll">
+                    <div class="ms-left">
+                        <div class="ms-section"><h1>Left Sec1</h1>
+                        <img src="{{asset('/images/topintro_whitetiger.jpg')}}" class="img-fluid rounded float-md-left" alt="topintro">
+                        </div>
+                        <div class="ms-section"><h1>Left Sec2</h1></div>
+                        <div class="ms-section"><h1>Left Sec3</h1></div>
+                    </div>
+                    <div class="ms-right">
+                        <div class="ms-section"><h1>Right Sec1</h1></div>
+                        <div class="ms-section"><h1>Right Sec2</h1></div>
+                        <div class="ms-section"><h1>Right Sec3</h1></div>
+                    </div>
                 </div>
-            </footer>
+
+            </main>
         </div>
     </body>
 </html>

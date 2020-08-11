@@ -12,7 +12,7 @@
                             <h1>zoofind<h1>
                             <h2>Animal Healing Effect<br>動物たちを見て癒されよう</h2>
                             <p>動物たちの様子を投稿してみよう！</p>
-                            <a class="btn btn-outline-primary" href="{{ url('/admin/zoo/create') }}">投稿してみる</a>
+                            <a class="btn btn-outline-primary" href="{{ url('/admin/zoo/index') }}">投稿してみる</a>
                         </div>
                     </div>
                 </div>

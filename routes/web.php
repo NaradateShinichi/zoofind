@@ -27,6 +27,7 @@ Route::group(['prefix' => 'admin','middleware'=>'auth'],function(){
 Route::get('/top','ZoofrontController@top');
 Route::get('/posts','ZoofrontController@index');
 Route::get('/posts/{id}','ZoofrontController@show');
+Route::get('/intro','ZoofrontController@intro');
 
 Route::get('/test','ZoofrontController@test');
 

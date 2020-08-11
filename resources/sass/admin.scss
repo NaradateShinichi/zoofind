@@ -3,7 +3,7 @@ body {
   background-position: center;
   background-color: #FFFAF0;
   color: #000;
-  padding-top: 85px;
+  padding-top: 65px;
 }
 
 //admin.blade.phpデザイン
@@ -105,6 +105,17 @@ a:hover{
 
 .login-body {
   background-color: rgba(0, 0, 0, 0.25);
+}
+
+.topicon {
+  height: 60px;
+  width: 140px;
+}
+
+.footer {
+  background-color: #F5DEB3;
+  padding: 40px 0;
+  text-align: center;
 }
 
 //top.blade.phpデザイン
@@ -211,7 +222,6 @@ a:hover{
     flex: 1 1 auto;
     min-height: 1px;
     padding: 1.25rem;
-    background-color: #FFFAFA;
     text-align: center;
     color: #8B4513;
 }
@@ -227,7 +237,7 @@ a:hover{
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: #fff;
+    background-color: #FFFAFA;
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0.25rem;
@@ -278,6 +288,18 @@ a:hover{
   color: #8B4513;
 }
 
+//edit.blade.phpデザイン
+
+.editpage_top , .edit_history {
+  color: #8B4513;
+}
+
+.list-group-item {
+    color: #8B4513;
+    border-color: #FFFAF0;
+    background-color: #FFFAF0;
+}
+
 //マイページのindex.blade.php
 
 .pb-0, .py-0 {
@@ -297,7 +319,7 @@ a:hover{
   background-color: rgba(0, 0, 0, 0.075);
 }
 
-.row h2 {
+.mypage_top {
   color: #8B4513;
 }
 
@@ -373,4 +395,44 @@ a:hover {
       }
     }
   }
+}
+
+//intro.blade.phpのデザイン
+
+.intro-top {
+  text-align: center;
+  color: #8B4513;
+  margin: 60px;
+}
+
+.intro {
+  padding: 30px;
+  margin: 40px 40px 70px 40px;
+  border-top: double 8px #CD853F;
+  border-bottom: double 8px #CD853F;
+}
+
+.intro-body {
+  color: #8B4513;
+}
+
+.fadeIn_right {
+  opacity: 0;
+  transform: translate(50%, 0);
+  transition: 2s;
+}
+
+.fadeIn_right.is-show {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.fadeIn_left {
+  opacity: 0;
+  transform: translate(-50%, 0);
+  transition: 2s;
+}
+.fadeIn_left.is-show {
+  transform: translate(0, 0);
+  opacity: 1;
 }
