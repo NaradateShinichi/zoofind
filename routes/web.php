@@ -11,9 +11,9 @@
 |
 */
 
-Route::get('/', function () {
+/* Route::get('/', function () {
     return view('welcome');
-});
+}); */
 
 Route::group(['prefix' => 'admin','middleware'=>'auth'],function(){
     Route::get('zoo/create','Admin\ZooController@add');
@@ -24,7 +24,7 @@ Route::group(['prefix' => 'admin','middleware'=>'auth'],function(){
     Route::get('zoo/delete', 'Admin\ZooController@delete');
 });
 
-Route::get('/top','ZoofrontController@top');
+Route::get('/','ZoofrontController@top');
 Route::get('/posts','ZoofrontController@index');
 Route::get('/posts/{id}','ZoofrontController@show');
 Route::get('/intro','ZoofrontController@intro');

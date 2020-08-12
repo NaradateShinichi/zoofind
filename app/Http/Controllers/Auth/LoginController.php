@@ -26,7 +26,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/top';
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.
@@ -40,12 +40,12 @@ class LoginController extends Controller
     
     protected function loggedOut(\Illuminate\Http\Request $request)
     {
-        return redirect('/top');
+        return redirect('/');
     }
     
     public function redirectPath()
     {
-        return '/top';
+        return '/';
         //例）return 'costs/index';
     }
 }
