@@ -41,15 +41,15 @@
                             @foreach($posts as $zoos)
                                 <tr>
                                     <td>{{ \Str::limit($zoos->title, 50) }}</td>
-                                    <td>{{ \Str::limit($zoos->zoopark_title, 50) }}</td>
-                                    <td>{{ \Str::limit($zoos->favorite_animal, 50) }}</td>
-                                    <td>{{ \Str::limit($zoos->body, 250) }}</td>
+                                    <td>{{ \Str::limit($zoos->zoopark_title, 25) }}</td>
+                                    <td>{{ \Str::limit($zoos->favorite_animal, 20) }}</td>
+                                    <td>{{ \Str::limit($zoos->body, 200) }}</td>
                                     <td>
                                         <div>
-                                            <a href="{{ action('Admin\ZooController@edit', ['id' => $zoos->id]) }}">編集</a>
+                                            <a class="btn btn-outline-primary" href="{{ action('Admin\ZooController@edit', ['id' => $zoos->id]) }}">編集</a>
                                         </div>
                                         <div>
-                                            <a href="{{ action('Admin\ZooController@delete', ['id' => $zoos->id]) }}">削除</a>
+                                            <a class="btn btn-outline-primary" href="{{ action('Admin\ZooController@delete', ['id' => $zoos->id]) }}">削除</a>
                                         </div>
                                     </td>
                                 </tr>

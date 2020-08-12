@@ -1,5 +1,5 @@
 @extends('layouts.admin')
-
+@section('title', '投稿一覧')
 @section('content')
     <div class="container">
         <hr color="#c0c0c0">
@@ -31,7 +31,7 @@
                                 </div>
                                 <div class="image col-md-6 text-right mt-4">
                                     @if ($post->image_path)
-                                        <img src="{{ asset('storage/image/' . $post->image_path) }}">
+                                        <img src="{{ $post->image_path }}">
                                     @endif
                                 </div>
                             </div>

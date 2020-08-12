@@ -11,6 +11,7 @@ use App\Zoo;
 use App\User;
 use App\History;
 use Carbon\Carbon;
+use Storage;
 
 class ZooController extends Controller
 {
@@ -32,8 +33,8 @@ class ZooController extends Controller
 
         // フォームから画像が送信されてきたら、保存して、$zoo->image_path に画像のパスを保存する
         if (isset($form['image'])) {
-            $path = $request->file('image')->store('public/image');
-            $zoo->image_path = basename($path);
+            $path = Storage::disk('s3')->putFile('/',$form['image'],'public');
+            $zoo->image_path = Storage::disk('s3')->url($path);
           } else {
             $zoo->image_path = null;
           }
@@ -85,8 +86,8 @@ class ZooController extends Controller
       // 送信されてきたフォームデータを格納する
       $zoo_form = $request->all();
       if (isset($zoo_form['image'])) {
-        $path = $request->file('image')->store('public/image');
-        $zoo->image_path = basename($path);
+        $path = Storage::disk('s3')->putFile('/',$form['image'],'public');
+        $zoo->image_path = Storage::disk('s3')->url($path);
         unset($zoo_form['image']);
       } elseif (isset($request->remove)) {
         $zoo->image_path = null;

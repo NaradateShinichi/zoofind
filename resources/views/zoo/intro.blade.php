@@ -1,5 +1,5 @@
 @extends('layouts.admin')
-@section('title', 'ZooFind')
+@section('title', '動物たちの紹介')
 @section('javascript')
 
 <script src="{{ secure_asset('js/fadein.js') }}"></script>
