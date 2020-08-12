@@ -48,7 +48,6 @@
                             <ul class="navbar-nav mr-auto ml-auto">
                                 <li class="nav-item"><a class="nav-link" href="{{ url('/posts') }}">投稿をみる</a></li>
                                 <li class="nav-item"><a class="nav-link" href="{{ url('/intro') }}">動物たちの紹介</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">動物園の紹介</a></li>
                             </ul>
     
                             <!-- Right Side Of Navbar -->
@@ -88,16 +87,18 @@
                 </nav>
             </div>
             {{-- ここまでナビゲーションバー --}}
-
+            
             <main class="py-0">
-                {{-- コンテンツをここに入れるため、@yieldで空けておきます。 --}}
-                @yield('content')
+                <div class="main">
+                    {{-- コンテンツをここに入れるため、@yieldで空けておきます。 --}}
+                    @yield('content')
+                </div>
             </main>
             <footer>
                 <div class="footer">
                     <small>copyrights &copy; 2020 Zoofind All rights Reserved.</small>
                 </div>
-            </footer>
+            </div>
         </div>
     </body>
 </html>

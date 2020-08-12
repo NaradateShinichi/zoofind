@@ -1,4 +1,6 @@
 function initMap(place) {
+    var map;
+    var marker;
     // インスタンス[geocoder]作成
     var geocoder = new google.maps.Geocoder();
  
@@ -19,6 +21,13 @@ function initMap(place) {
  
             // #map_canvasを取得し、[mapOptions]の内容の、地図のインスタンス([map])を作成する
             var map = new google.maps.Map(document.getElementById('map'), myOptions);
+            
+            var myLatlng = result[0].geometry.location;
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+            }); 
+            
         } else {
             alert('取得できませんでした…');
         }

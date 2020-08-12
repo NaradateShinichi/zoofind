@@ -13,6 +13,9 @@
                                     <div class="date">
                                         {{ $post->updated_at->format('Y年m月d日') }}
                                     </div>
+                                    <div class="user">
+                                        {{ $post->user->name }}
+                                    </div>
                                     <div class="title">
                                         {{ str_limit($post->title, 150) }}
                                     </div>
@@ -39,5 +42,5 @@
             </div>
         </div>
     </div>
-    </div>
+    <div class="paginate">{{ $posts->links() }}</div>
 @endsection

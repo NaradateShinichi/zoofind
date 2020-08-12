@@ -15,8 +15,7 @@ class ZoofrontController extends Controller
     
     public function index(Request $request)
     {
-        $posts = Zoo::all()->sortByDesc('updated_at');
-
+        $posts = Zoo::orderBy('updated_at', 'DESC')->paginate(5);
 
         // news/index.blade.php ファイルを渡している
         // また View テンプレートに headline、 posts、という変数を渡している

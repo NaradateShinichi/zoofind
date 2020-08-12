@@ -47,7 +47,7 @@ class ZooController extends Controller
         $zoo->fill($form);
         $zoo->save();
         
-        return redirect('admin/zoo/create');
+        return redirect('admin/zoo/index');
     }
     
     public function index(Request $request)

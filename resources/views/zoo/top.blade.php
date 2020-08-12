@@ -9,9 +9,9 @@
                     <img src="{{asset('/images/toplogo2.jpg')}}" class="img-fluid" alt="toplogo">
                     <div class="top-message-field">
                         <div class="top-message">
-                            <h1>zoofind<h1>
-                            <h2>Animal Healing Effect<br>動物たちを見て癒されよう</h2>
-                            <p>動物たちの様子を投稿してみよう！</p>
+                            <p class="h1">Zoofind</p>
+                            <p class="h2">Animal Healing Effect<br>動物たちを見て癒されよう</p>
+                            <p class="lead">動物たちの様子を投稿してみよう！</p>
                             <a class="btn btn-outline-primary" href="{{ url('/admin/zoo/index') }}">投稿してみる</a>
                         </div>
                     </div>
