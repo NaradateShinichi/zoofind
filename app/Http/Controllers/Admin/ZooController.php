@@ -86,7 +86,7 @@ class ZooController extends Controller
       // 送信されてきたフォームデータを格納する
       $zoo_form = $request->all();
       if (isset($zoo_form['image'])) {
-        $path = Storage::disk('s3')->putFile('/',$form['image'],'public');
+        $path = Storage::disk('s3')->putFile('/',$zoo_form['image'],'public');
         $zoo->image_path = Storage::disk('s3')->url($path);
         unset($zoo_form['image']);
       } elseif (isset($request->remove)) {
