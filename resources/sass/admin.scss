@@ -344,11 +344,19 @@ a:hover {
   text-decoration: underline;
 }
 
-.col-md-2 {
-    flex: 0 0 16.6666666667%;
-    max-width: 16.6666666667%;
+.color {
     color: #8B4513;
 }
+
+.scroll {}
+
+@media screen and (max-width: 640px) {
+  .scroll {
+    overflow: auto;
+    white-space: nowrap;
+  }
+}
+
 
 //frontのindex.blade.phpデザイン
 .posts {

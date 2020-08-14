@@ -27,14 +27,17 @@
         </div>
         <div class="row">
             <div class="list-zoo col-md-12 mx-auto">
+                <div class="scroll">
                 <div class="row">
-                    <table class="table table-hover">
+                    
+                    <table class="table table-hover sumaho">
                         <thead>
                             <tr>
                                 <th width="15%">タイトル</th>
                                 <th width="15%">動物園名称</th>
                                 <th width="15%">好きな動物</th>
                                 <th width="40%">内容</th>
+                                <th width="15%"></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -56,6 +59,7 @@
                             @endforeach
                         </tbody>
                     </table>
+                    </div>
                 </div>
             </div>
         </div>
