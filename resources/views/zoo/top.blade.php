@@ -4,7 +4,7 @@
 @section('content')
     <div class="container-fluid">
         <div class="row">
-            <div class="no-gutters">
+            <div class="col no-gutters">
                 <div class="top-image">
                     <img src="{{asset('/images/toplogo2.jpg')}}" class="img-fluid" alt="toplogo">
                     <div class="top-message-field">
